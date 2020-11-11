@@ -9,33 +9,95 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-dark bg-primary">
-        <a class="navbar-brand" href="../index.html">
-            <img src="../img/logo.jpg" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy"> Figuras Geometricas
-        </a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="../img/logo.jpg" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy"> Figuras Geometricas
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../index.html"> Inicio </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
 
-    <div class="container mt-5">
-        <div class="row">
-            <div class="col-12 col-sm-12 col-lg-3 col-xl-3">
-                <img src="../img/triangulo.png" class="img-fluid" width="100%" alt="">
+    <div class="container">
+        <h2 class="mt-3 text-center">Elementos</h2>
+        <div class="row mt-3">
+            <div class="col-11 col-sm-11 col-lg-8 col-xl-8">
+                <p> En un triángulo se pueden diferenciar los siguientes elementos:</p>
+                <br>
+                <p><strong>*Vértices:</strong> puntos en los que confluyen dos lados. Tiene 3 vértices (A, B y C).</p>
+                <br>
+                <p><strong>*Lados:</strong> segmentos que unen dos vértices consecutivos del triángulo y que delimitan su perímetro. Tiene 3 lados (a, b y c).</p>
+                <br>
+                <p><strong>*Ángulos interiores:</strong> ángulo que forman dos lados consecutivos en el vértice en el que confluyen. Hay 3 ángulos interiores <br>(α, β y γ). Los ángulos interiores del triángulo suman 180º</p>
+                <br>
+                <p><strong>*Ángulos exteriores:</strong> ángulo de un lado con la prolongación exterior del lado consecutivo. Hay 3 ángulos exteriores (θ).<br> Los ángulos exteriores siempre suman 360º.</p>
+                <br>
+                <p><strong>*Altura de un triángulo:</strong> La altura de un triángulo (h) es el segmento perpendicular a un lado que va desde el vértice<br> opuesto a este lado (o a su prolongación). También puede entenderse como la distancia de un lado
+                    al vértice opuesto. Un triángulo tiene tres alturas, según el vértice de referencia que se escoja. Las tres alturas confluyen en un punto llamado ortocentro.</p>
             </div>
-            <div class="col-12 col-sm-12 col-lg-9 col-xl-9">
-                <p> Descripción sobre el triangulo, como características, tipos de triangulos, formulas de (área, perímetro, angulo) </p>
+            <div class="col-11 col-sm-11 col-lg-4 col-xl-4 text-center">
+                <img src="../figurasG/triangulo/triangulo1.png" class="img-fluid" width="100%">
             </div>
         </div>
-        <div class="row d-flex justify-content-between align-self-end">
-            <div class="col">
-                <a href="../index.html" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Inicio</a>
+        <hr>
+        <h2 class="mt-3 text-center">Tipos de Triangulos según sus lados</h2>
+        <div class="row mt-3">
+            <div class="col-12 mt-3">
+                <p><strong>*Triángulo equilátero: </strong>tiene todos sus lados iguales. Por tanto, sus ángulos también son los tres iguales. Es decir:</p>
             </div>
-            <div class="col">
-                <a href="*" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Ejercicio</a>
+            <div class="col-12 text-center">
+                <img src="../figurasG/triangulo/triangulo2.png"><img src="../figurasG/triangulo/triangulo3.png">
+            </div>
+            <div class="col-12 mt-3">
+                <p class="text-center"><strong> Como todos los ángulos son iguales y suman 180º, todos son de 60º (α=β=γ=60º).</strong></p>
+                <br>
+                <p><strong>*Triángulo isósceles: </strong>tiene dos lados iguales. Por lo tanto, dos de sus ángulos también son iguales.</p>
+            </div>
+            <div class="col-12 text-center">
+                <img src="../figurasG/triangulo/triangulo4.png"><img src="../figurasG/triangulo/triangulo5.png">
+            </div>
+            <div class="col-12 mt-3">
+                <p class="text-center"><strong> El ángulo desigual β es el que forman los dos lados iguales (a y c).</strong></p>
+                <br>
+                <p><strong>*Triángulo escaleno: </strong>los tres lados son desiguales, por lo que los tres ángulos también son diferentes. Es decir:</p>
+            </div>
+            <div class="col-12 text-center">
+                <img src="../figurasG/triangulo/triangulo6.png"><img src="../figurasG/triangulo/triangulo7.png">
+            </div>
+        </div>
+        <hr>
+        <h2 class="mt-3 text-center">Tipos de Triangulos según sus ángulos</h2>
+        <div class="row mt-3">
+            <div class="col-12 mt-3">
+                <p><strong>*Triángulo rectangulo: </strong>uno de sus ángulos es de 90º. Los otros dos son agudos (menores de 90º).</p>
+                <div class="col-12 text-center">
+                    <img src="../figurasG/triangulo/triangulo8.png">
+                </div>
+                <br>
+                <p><strong>*Triángulo acutángulo: </strong>los tres ángulos son agudos (menores de 90º).</p>
+                <div class="col-12 text-center">
+                    <img src="../figurasG/triangulo/triangulo9.png">
+                </div>
+                <br>
+                <p><strong>*Triángulo obtusángulo: </strong>uno de sus ángulos es mayor a 90º. Los otros dos son agudos (menores de 90º).</p>
+                <div class="col-12 text-center">
+                    <img src="../figurasG/triangulo/triangulo10.png">
+                </div>
             </div>
         </div>
     </div>
-    <div class="container 15">
 
-    </div>
+
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>

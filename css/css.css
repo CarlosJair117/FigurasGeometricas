@@ -1,0 +1,10 @@
+.exp {
+    background-image: url(../img/fondo.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.explicacion {
+    font-size: 20px;
+    line-height: 45px;
+}

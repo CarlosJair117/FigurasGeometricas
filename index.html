@@ -6,15 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Figuras geometricas</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/css.css">
 </head>
 
-<body>
+<body class="imagen-principal">
 
-    <nav class="navbar navbar-dark bg-primary">
-        <a class="navbar-brand" href="#">
-            <img src="img/logo.jpg" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy"> Figuras Geometricas
-        </a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="img/logo.jpg" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy"> Figuras Geometricas
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html"> Inicio </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="explicacion.html">¿Que es una figura Geometrica?</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
+    <div class="container mt-3" id="fechahoy"></div>
+    <script>
+        var d = new Date();
+        var month = new Array(12);
+        month[0] = 'Enero';
+        month[1] = 'Febrero';
+        month[2] = 'Marzo';
+        month[3] = 'Abril';
+        month[4] = 'Mayo';
+        month[5] = 'Junio';
+        month[6] = 'Julio';
+        month[7] = 'Agosto';
+        month[8] = 'Septiembre';
+        month[9] = 'Octubre';
+        month[10] = 'Noviembre';
+        month[11] = 'Diciembre';
+        var todaysDate = +d.getDate() + ' de ' + month[d.getUTCMonth()] + ' del ' + d.getUTCFullYear();
+        document.getElementById('fechahoy').innerHTML = 'Hoy es: ' + todaysDate;
+    </script>
 
     <div class="container mt-5">
         <div class="row d-flex justify-content-between">
@@ -25,7 +61,7 @@
                 </a>
             </div>
             <div class="col-12 col-sm-12 col-lg-3 col-xl-3 text-center">
-                <a href="">
+                <a href="figuras/cuadrado.html">
                     <img src="img/cuadrado.png" alt="" class="img-fluid" width="100%">
                     <h3>Cuadrado</h3>
                 </a>
